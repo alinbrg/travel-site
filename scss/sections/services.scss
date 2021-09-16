@@ -1,0 +1,88 @@
+#services{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position:relative;
+    span{
+        width:98px;
+        margin:0 auto;
+        @include font(18px, #5E6282, 'Arial');
+        text-transform: uppercase;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    h3{
+        @include font(50px, #14183E, 'Lucida Sans');
+        line-height: 67px;
+        font-weight: bold;
+        width:50%;
+        margin:0 auto;
+        margin-bottom: 68px;
+    }
+    .plus{
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    .offers{
+        @include flex(flex, space-around, center, wrap);
+        margin-bottom: 50px;
+        
+        div{
+            width: 20%;
+            position:relative;
+            &:hover{
+                background-color: #FFFFFF;
+                border-radius: 36px;
+                box-shadow: 0px 51.85px 46.3px rgba(0, 0, 0, 0.07);
+                // filter:drop-shadow(0px 51.85px 46.3px rgba(0, 0, 0, 0.07));
+                cursor: pointer;
+            }
+            &:first-child .box{
+                position:absolute;
+                right:25%;
+                top:10%;
+            }
+            &:nth-child(2) .box{
+                position:absolute;
+                right:40%;
+                top:5;
+                transform:rotate(90grad);
+            }
+            &:nth-child(3) .box{
+                position:absolute;
+                right:2%;
+                top:-8%;
+            }
+            &:nth-child(4) .box{
+                position:absolute;
+                right:35%;
+                top:10%;
+                transform:rotate(100grad);
+            }
+            img{
+                margin-bottom: 29px;
+                margin-top: 40px;
+            }
+            h5{
+                @include font(20px, #1E1D4C,'Trebuchet MS' );
+                line-height: 27px;
+                margin-bottom: 15px;
+            }
+            p{
+                @include font(16px, #5E6282, 'Tahoma');
+                line-height: 26px;
+                width:80%;
+                margin:0 auto 45px;
+            }
+            img.overlay{
+                position: relative;
+                z-index:1;
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,73 @@
+body{
+    position: relative;
+    overflow-x: hidden;
+    #about{
+        width:1160px;
+        height: 764px;
+        margin:18px auto 0;
+        @include flex(flex, space-between, center, wrap);
+        .decore{
+            position:absolute;
+            top:-20%;
+            right:-5%;
+            z-index:-1;
+        }
+        .desctiption-box{
+            width:35%;
+            h4{
+                @include font(20px,#DF6951, 'Franklin Gothic Medium');
+                line-height: 30px;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+            h1{
+                @include font(84px, #181E4B, 'Impact');
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            p{
+                @include font(16px, #5E6282, "Segoe UI" );
+                line-height: 30px;
+                margin-bottom: 34px;
+                font-weight: bold;
+            }
+            .more{
+                width:396px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                button{
+                    width:40%;
+                    height:100%;
+                    font-weight: bold;
+                }
+                .find-more, .play-demo{
+                    @include font(18px, #FFFFFF, Helvetica );
+                    line-height: 24px;
+                }
+                .find-more{
+                    background-color: #F1A501;
+                    border-radius: 10px;
+                }
+                .play-demo{
+                    // width:182px;
+                    color:#686D77;
+                    span{
+                        padding:15px;
+                        width:52px;
+                        height:52px;
+                        border-radius: 50%;
+                        color:white;
+                        background-color: #DF6951;
+                    }
+                }
+            }
+        }
+        .traveller-img-box{
+            width:60%;
+            img{
+                width:100%;
+            }
+        }
+    }
+}

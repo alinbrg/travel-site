@@ -1,0 +1,22 @@
+@mixin flex($flex, $horizontaly, $verticaly, $wrap){
+    display: $flex;
+    justify-content: $horizontaly;
+    align-items: $verticaly;
+    flex-wrap: $wrap;
+}
+
+@mixin display($display){
+    display: $display;
+}
+
+@mixin border($size, $style, $color){
+    border-width: $size;
+    border-style: $style;
+    border-color: $color;
+}
+
+@mixin font($size, $color, $family){
+    font-size: $size;
+    color: $color;
+    font-family: $family;
+}

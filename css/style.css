@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1160px;
+  height: 50px;
+  margin: 37px auto 0;
+}
+header .logo {
+  width: 114px;
+}
+header nav {
+  width: 70%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+header nav ul li a, header nav ul li button, header nav ul li select, header nav ul li option {
+  width: 100%;
+  height: 40px;
+  color: #212832;
+  font-size: 17px;
+  line-height: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+header nav ul li:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #212832;
+  border-radius: 5px;
+}
+header nav ul li #languages {
+  background: transparent;
+  border: none;
+  width: 60%;
+}
+header nav ul li #languages:focus-visible {
+  outline: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+body #about {
+  width: 1160px;
+  height: 764px;
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #about .decore {
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  z-index: -1;
+}
+body #about .desctiption-box {
+  width: 35%;
+}
+body #about .desctiption-box h4 {
+  font-size: 20px;
+  color: #DF6951;
+  font-family: "Franklin Gothic Medium";
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+body #about .desctiption-box h1 {
+  font-size: 84px;
+  color: #181E4B;
+  font-family: "Impact";
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+body #about .desctiption-box p {
+  font-size: 16px;
+  color: #5E6282;
+  font-family: "Segoe UI";
+  line-height: 30px;
+  margin-bottom: 34px;
+  font-weight: bold;
+}
+body #about .desctiption-box .more {
+  width: 396px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+body #about .desctiption-box .more button {
+  width: 40%;
+  height: 100%;
+  font-weight: bold;
+}
+body #about .desctiption-box .more .find-more, body #about .desctiption-box .more .play-demo {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  line-height: 24px;
+}
+body #about .desctiption-box .more .find-more {
+  background-color: #F1A501;
+  border-radius: 10px;
+}
+body #about .desctiption-box .more .play-demo {
+  color: #686D77;
+}
+body #about .desctiption-box .more .play-demo span {
+  padding: 15px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: white;
+  background-color: #DF6951;
+}
+body #about .traveller-img-box {
+  width: 60%;
+}
+body #about .traveller-img-box img {
+  width: 100%;
+}
+
+#services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+#services span {
+  width: 98px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #5E6282;
+  font-family: "Arial";
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+#services h3 {
+  font-size: 50px;
+  color: #14183E;
+  font-family: "Lucida Sans";
+  line-height: 67px;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 68px;
+}
+#services .plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#services .offers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#services .offers div {
+  width: 20%;
+  position: relative;
+}
+#services .offers div:hover {
+  background-color: #FFFFFF;
+  border-radius: 36px;
+  box-shadow: 0px 51.85px 46.3px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+#services .offers div:first-child .box {
+  position: absolute;
+  right: 25%;
+  top: 10%;
+}
+#services .offers div:nth-child(2) .box {
+  position: absolute;
+  right: 40%;
+  top: 5;
+  transform: rotate(90grad);
+}
+#services .offers div:nth-child(3) .box {
+  position: absolute;
+  right: 2%;
+  top: -8%;
+}
+#services .offers div:nth-child(4) .box {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+  transform: rotate(100grad);
+}
+#services .offers div img {
+  margin-bottom: 29px;
+  margin-top: 40px;
+}
+#services .offers div h5 {
+  font-size: 20px;
+  color: #1E1D4C;
+  font-family: "Trebuchet MS";
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+#services .offers div p {
+  font-size: 16px;
+  color: #5E6282;
+  font-family: "Tahoma";
+  line-height: 26px;
+  width: 80%;
+  margin: 0 auto 45px;
+}
+#services .offers div img.overlay {
+  position: relative;
+  z-index: 1;
+}
