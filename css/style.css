@@ -51,6 +51,38 @@ button {
   border: none;
 }
 
+#destinations h3, #services h3 {
+  font-size: 50px;
+  color: #14183E;
+  font-family: "Lucida Sans";
+  line-height: 67px;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  text-align: center;
+}
+
+#destinations, #services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+#destinations .category, #services .category {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #5E6282;
+  font-family: "Arial";
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -190,34 +222,6 @@ body #about .traveller-img-box img {
   width: 100%;
 }
 
-#services {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-#services span {
-  width: 98px;
-  margin: 0 auto;
-  font-size: 18px;
-  color: #5E6282;
-  font-family: "Arial";
-  text-transform: uppercase;
-  line-height: 27px;
-  margin-bottom: 10px;
-}
-#services h3 {
-  font-size: 50px;
-  color: #14183E;
-  font-family: "Lucida Sans";
-  line-height: 67px;
-  font-weight: bold;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 68px;
-}
 #services .plus {
   position: absolute;
   right: 0;
@@ -284,4 +288,75 @@ body #about .traveller-img-box img {
 #services .offers div img.overlay {
   position: relative;
   z-index: 1;
+}
+
+#destinations {
+  padding-bottom: 186px;
+}
+#destinations .places {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#destinations .places .places-list {
+  box-shadow: 0px 15.85px 26.3px rgba(0, 0, 0, 0.09);
+  width: 314px;
+  border-radius: 24px;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+#destinations .places .places-list img {
+  width: 100%;
+  border-radius: 30px;
+  transform: scale(1.23);
+}
+#destinations .places .places-list .more-info {
+  position: absolute;
+  bottom: 0;
+  height: 130px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+#destinations .places .places-list .more-info .cost {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#destinations .places .places-list .more-info .cost span {
+  font-size: 18px;
+  color: #5E6282;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 22px;
+}
+#destinations .places .places-list .more-info .duration {
+  padding-left: 40px;
+  text-align: left;
+  margin: 19px 0 42px;
+}
+#destinations .places .places-list .more-info .duration .arrow {
+  width: 16.25px;
+  height: 16.25px;
+  transform: initial;
+  border-radius: 0;
+}
+#destinations .places .places-list .more-info .duration span {
+  margin-left: 16px;
+  font-size: 16px;
+  color: #5E6282;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 19px;
+}
+#destinations .places [alt=decore] {
+  position: absolute;
+  right: 10px;
+  width: 96px;
+  z-index: -5;
 }
