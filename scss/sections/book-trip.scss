@@ -1,0 +1,55 @@
+#book-trip{
+    @include flex(flex, center, center, nowrap);
+    flex-direction: column;
+    width:1160px;
+    margin: 0 auto;
+    span{
+        width:126px;
+        height:27px;
+        @include font(18px, #5E6282, Arial);
+    }
+    h3{
+        @include font(50px, #14183E, Georgia);
+        line-height: 67px;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    .actions{
+        width:70%;
+        height:64px;
+        @include flex(flex, space-evenly, center, nowrap);
+        margin-bottom: 48px;
+        .img-box{
+            width:47px;
+            height:48px;
+            border-radius: 13px;
+            @include flex(flex, center, center, nowrap);
+            img{
+                width:22px;
+                height:22px;
+                transition: all 0.3s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .choose{
+            background-color: #F0BB1F;
+        }
+        .payment{
+            background-color: #F15A2B;
+        }
+        .taxi{
+            background-color: #006380;
+        }
+        .content{
+            h6, p{
+                @include font(16px, #5E6282, Arial);
+            }
+            h6{
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

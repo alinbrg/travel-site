@@ -64,7 +64,8 @@ button {
 }
 
 #destinations, #services {
-  width: 100%;
+  width: 1160px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +147,7 @@ body #about {
   width: 1160px;
   height: 764px;
   margin: 18px auto 0;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,7 +155,7 @@ body #about {
 }
 body #about .decore {
   position: absolute;
-  top: -20%;
+  top: -30%;
   right: -5%;
   z-index: -1;
 }
@@ -222,6 +224,9 @@ body #about .traveller-img-box img {
   width: 100%;
 }
 
+#services {
+  width: 1160px;
+}
 #services .plus {
   position: absolute;
   right: 0;
@@ -291,6 +296,7 @@ body #about .traveller-img-box img {
 }
 
 #destinations {
+  width: 1160px;
   padding-bottom: 186px;
 }
 #destinations .places {
@@ -359,4 +365,89 @@ body #about .traveller-img-box img {
   right: 10px;
   width: 96px;
   z-index: -5;
+}
+
+#book-trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+#book-trip span {
+  width: 126px;
+  height: 27px;
+  font-size: 18px;
+  color: #5E6282;
+  font-family: Arial;
+}
+#book-trip h3 {
+  font-size: 50px;
+  color: #14183E;
+  font-family: Georgia;
+  line-height: 67px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+#book-trip .actions {
+  width: 70%;
+  height: 64px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+}
+#book-trip .actions .img-box {
+  width: 47px;
+  height: 48px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#book-trip .actions .img-box img {
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s;
+}
+#book-trip .actions .img-box img:hover {
+  transform: scale(1.2);
+}
+#book-trip .actions .choose {
+  background-color: #F0BB1F;
+}
+#book-trip .actions .payment {
+  background-color: #F15A2B;
+}
+#book-trip .actions .taxi {
+  background-color: #006380;
+}
+#book-trip .actions .content h6, #book-trip .actions .content p {
+  font-size: 16px;
+  color: #5E6282;
+  font-family: Arial;
+}
+#book-trip .actions .content h6 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+#partners {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#partners a img {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+#partners a img:hover {
+  filter: grayscale(0%);
 }

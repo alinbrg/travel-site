@@ -1,5 +1,6 @@
 #destinations{
     @extend %section;
+    width:1160px;
     padding-bottom: 186px;
     .category{
         @extend %section-span;

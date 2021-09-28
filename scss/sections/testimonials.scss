@@ -1,0 +1,16 @@
+// #testimonials
+
+#partners{
+    width:1160px;
+    margin:0 auto;
+    @include flex(flex, space-evenly, center, nowrap);
+    a{
+        img{
+            filter: grayscale(100%);
+            &:hover{
+                filter: grayscale(0%);
+            }
+            transition: all 0.3s;
+        }
+    }
+}

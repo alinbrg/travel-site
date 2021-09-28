@@ -1,5 +1,6 @@
 #services{
     @extend %section;
+    width:1160px;
     .category{
         @extend %section-span;
     }
